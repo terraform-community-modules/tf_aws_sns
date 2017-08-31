@@ -3,6 +3,8 @@ sns terraform module
 
 A terraform module to provide Simple Notification Service (SNS) in AWS.
 
+[![CircleCI](https://circleci.com/gh/tuxpower/tf_aws_sns.svg?style=svg)](https://circleci.com/gh/tuxpower/tf_aws_sns)
+
 Module Input Variables
 ----------------------
 
