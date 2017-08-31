@@ -16,6 +16,10 @@ Module Input Variables
 Usage
 -----
 
+You can use these in your terraform template with the following steps.
+
+1.) Adding a module resource to your template, e.g. `main.tf`
+
 ```hcl
 module "sns" {
   source = "github.com/terraform-community-modules/tf_aws_sns"
@@ -46,6 +50,13 @@ POLICY
   delivery_policy = "{\"http\":{\"defaultHealthyRetryPolicy\":{\"numRetries\":5}}}"
 }
 ```
+
+2.) Setting values for the following variables, either through `terraform.tfvars` or `-var` arguments on the CLI
+
+- `name`
+- `display_name`
+- `policy`
+- `delivery_policy`
 
 Outputs
 =======
